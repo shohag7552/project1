@@ -3,9 +3,7 @@ import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
-import 'package:project1_client/project1_client.dart';
 import 'package:project1_flutter/dependency_injection.dart';
-import 'package:serverpod_flutter/serverpod_flutter.dart';
 
 class AppBlocObserver extends BlocObserver {
   const AppBlocObserver();

@@ -1,9 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:project1_flutter/counter/counter.dart';
+import 'package:get_it/get_it.dart';
+import 'package:project1_client/project1_client.dart';
+import 'package:project1_flutter/counter/view/counter_page.dart';
 import 'package:project1_flutter/l10n/l10n.dart';
 
-class App extends StatelessWidget {
+class App extends StatefulWidget {
   const App({super.key});
+
+  @override
+  State<App> createState() => _AppState();
+}
+
+class _AppState extends State<App> {
+
+  @override
+  void initState() {
+    super.initState();
+
+    final client = GetIt.I<Client>();
+    client.example.hello('world').then((value) {
+      print('===============>>>>. $value');
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +34,7 @@ class App extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const MyApp(),
+      home: const CounterPage(),
     );
   }
 }

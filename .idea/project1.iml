@@ -24,8 +24,13 @@
       <excludeFolder url="file://$MODULE_DIR$/project1_server/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/project1_server/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/project1_server/build" />
+      <excludeFolder url="file://$MODULE_DIR$/project1_flutter.bak/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/project1_flutter.bak/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/project1_flutter.bak/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
   </component>
 </module>
